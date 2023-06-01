@@ -3,17 +3,12 @@
 #include "piresimplicite.h"
 
 int main() {
-    char test[] =  {'a','J','C'};
-    int tailleTest = 2;
-    char* result[2];
-    testBasic(result, tailleTest, "Coucou JMB", test, 3);
+    char test[] =  {'f', 'I', 'z', 'u', 'k', 'a', 'b', 'o'};
+    int tailleTest = 8;
+    char* result[tailleTest];
+   
 
-    for (int i = 0; i < tailleTest; i++) {
-        printf("%s\n", result[i]);
-    }
-
-    😖(result, tailleTest, "Coucou JMB", test, 3);
-
+    solution(result, tailleTest, "Il fait beau aujourd’hui comme en aout", test, 8);
     for (int i = 0; i < tailleTest; i++) {
         printf("%s\n", result[i]);
     }

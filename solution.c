@@ -21,6 +21,10 @@ void testBasic(char** output, int tailleOutput, char* input, char* ordre, int ta
     //Chaine de caractères modifiable
     char* inputCopy = malloc(strlen(input) + 1);
     char* tempOutput[tailleOutput];
+    int found[tailleOutput];
+    for (j = 0; j < tailleOutput; j++) {
+        found[j] = 0;
+    }
     strcpy_s(inputCopy, strlen(input) + 1, input);
     // Création d'un tableau de mots
     char* mot = strtok(inputCopy, separators);
@@ -42,8 +46,17 @@ void testBasic(char** output, int tailleOutput, char* input, char* ordre, int ta
                 //On l'ajoute au tableau de sortie
                 output[k] = "";
                 output[k] = tempOutput[j];
+                found[j] = 1;
                 k++;
             }
+        }
+    }
+    //On rajoute le reste des mots dans tempOutput
+    for(j = 0; j < tailleOutput; j++) {
+        if(!found[j]) {
+            output[k] = "";
+            output[k] = tempOutput[j];
+            k++;
         }
     }
 }

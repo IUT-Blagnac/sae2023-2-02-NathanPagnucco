@@ -11,7 +11,6 @@
 #define 😤 int
 #define 😬 void
 #define 🤷 pointeur1_1
-#define 🤹 pointeur3
 #define 🤵 test1
 #define 🤸 pointeur2
 #define 😰 malloc
@@ -25,12 +24,16 @@
 #define 🤔 NULL
 #define 🤬 12
 #define 🥆 4
+#define 😼 malloc
+#define 🤢 pointeur1
 #define 🤮 tailleOrdre
 #define 🤴 test3
 #define 🤕 separators
 #define 🥂 1
 #define 🤗 testBasic
-#define 🤘 " ,.;:!?"
+#define 🤥 tempOutput
+#define 🤣 inputcopy
+#define 🤘 " ,.;:!?'’"
 #define 🤩 test
 #define 🥇 5
 #define 🤺 while
@@ -52,7 +55,9 @@
 #define 😶 int
 #define 😷 main
 #define 🥀 ++
+#define 😁 machin
 #define 🥄 2
+#define 🤧 test14
 #define 🤾 test5
 #define 🥊 by
 #define 🤳 k
