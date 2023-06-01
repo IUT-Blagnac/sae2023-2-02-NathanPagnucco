@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "solution.h"
-#include "piresimplicite.h"
+#include "simplicitepire.h"
 
 int main() {
     char test[] =  {'f', 'I', 'z', 'u', 'k', 'a', 'b', 'o'};

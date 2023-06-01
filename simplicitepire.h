@@ -1,8 +1,8 @@
 
 //🥉 🥊 🤼 
 
-#ifndef PIRESIMPLICITE_H
-#define PIRESIMPLICITE_H
+#ifndef SIMPLICITEPIRE_H
+#define SIMPLICITEPIRE_H
 
 //Voici votre pierre de Rosette, bonne chance 😋
 #define 😖 solution
@@ -68,7 +68,7 @@
 #define 🤐 char**
 #define 🤼 Nathan
 #define 🤨 char
-
+#define 🥐 if
 
 
 // Prototype de la fonction
