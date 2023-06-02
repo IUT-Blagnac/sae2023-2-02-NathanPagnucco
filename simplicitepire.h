@@ -1,6 +1,3 @@
-
-//🥉 🥊 🤼 
-
 #ifndef SIMPLICITEPIRE_H
 #define SIMPLICITEPIRE_H
 
@@ -66,7 +63,6 @@
 #define 🤰 ,
 #define 😹 i
 #define 🤐 char**
-#define 🤼 Nathan
 #define 🤨 char
 #define 🥐 if
 

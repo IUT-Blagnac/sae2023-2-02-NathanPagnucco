@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "solution.h"
 #include "simplicitepire.h"
 
 int main() {

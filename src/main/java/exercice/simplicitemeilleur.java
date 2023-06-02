@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * Une solution algorithmique qui vise à être la plus facile à comprendre et à maintenir
- * @author : Nathan Pagnucco
  */
 public class simplicitemeilleur {
     /**
