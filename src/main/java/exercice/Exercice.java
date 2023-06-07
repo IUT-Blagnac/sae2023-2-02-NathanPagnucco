@@ -4,34 +4,36 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Exercice {
-    //Version de test on en fait une qui marche
-    public static List<String> solution(String texte, List<Character> ordre) {
-        List<String> listeMotsTries = new ArrayList<>();
-        String[] arrayMotsNonTries = texte.split("[^a-zA-Z0-9]");
-        for (char lettreOrdre : ordre) {
-            //On parcourt les lettres de l'ordre
-            for (String mot : arrayMotsNonTries) {
-                //On parcourt les mots du texte
-                if (!mot.isEmpty() && mot.charAt(0) == lettreOrdre) { //Si le mot n'est pas vide et que la première lettre du mot est la lettre de l'ordre
-                    listeMotsTries.add(mot); //On ajoute le mot à la liste des mots triés, il sera trié selon l'ordre
-                    mot=""; //On vide le mot pour ne pas le réutiliser
+
+    public static List<String> solution(String str, List<Character> ordre) {
+        List<String> motOrdreList = new ArrayList<>(); // Liste des mots dans l'ordre 
+        List<String> motSepareList = new ArrayList<>(); // Liste des mots séparés par des espaces, des apostrophes et des virgules
+    
+        String[] motsSepares = str.split("[,\\s']+"); // Séparer la chaîne en mots en utilisant des espaces, des apostrophes et des virgules comme délimiteurs
+    
+        for (String motSep : motsSepares) { // Parcourir chaque mot séparé 
+            motSepareList.add(motSep); // Ajouter le mot à la liste des mots séparés 
+        } 
+    
+        if (str.isEmpty()) { // Si la chaîne de caractère est vide 
+            motOrdreList.add(""); // Ajouter un mot vide à la liste des mots dans l'ordre
+        } else {
+            for (char motOrd : ordre) { // Parcourir chaque caractère de la liste des ordres 
+                for (String motSep : motSepareList) { // Parcourir chaque mot de la liste des mots séparés 
+                    if (motSep.charAt(0) == motOrd) { // Si le premier caractère du mot est égal à l'ordre 
+                        motOrdreList.add(motSep); // Ajouter le mot à la liste des mots dans l'ordre 
+                    }
                 }
             }
-        }
-        //On parcourt les mots restants, ceux qui ne sont pas impacté par l'ordre
-        for (String mot : arrayMotsNonTries) {
-            if (!mot.isEmpty() && !listeMotsTries.contains(mot)) {
-                listeMotsTries.add(mot);
-            }
-        }
-        return listeMotsTries;
-    }
-
+            motSepareList.removeAll(motOrdreList); // Supprimer les mots déjà présents dans la liste des mots dans l'ordre
     
-
-    //Solution pire simplicité
-    public static List<String> solutionPireSimp(String texte, List<Character> ordre) {List<String> mots = new ArrayList<String>();String[] motsArray = texte.split("[^a-zA-Z]+");for (char lettre : ordre) {for (String mot : motsArray) {if (!mot.isEmpty() && mot.charAt(0) == lettre) {mots.add(mot);}}}for (String mot : motsArray) {if (!mot.isEmpty() && !mots.contains(mot)) {mots.add(mot);}}return mots;}
-
-
-
+            // Ajouter les mots restants à la liste des mots dans l'ordre
+            motOrdreList.addAll(motSepareList);
+        }
+        return motOrdreList; // Retourne la liste des mots dans l'ordre
+    }
 }
+
+// Point de vue de la complexité algorithmique, cette solution est pire que la solution de SimpliciteMeilleur.java car elle utilise deux boucles imbriquées pour parcourir les mots séparés et les ordres.
+// La liste motOrdreList sera d'abord remplie avec les mots correspondant à l'ordre spécifié, puis les mots restants de motSepareList seront ajoutés à la liste.
+    

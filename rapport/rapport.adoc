@@ -1,0 +1,68 @@
+= Test
+
+== Test
+
+=== 4-sobriete-meilleur
+
+La fonction passe tous les tests de base et compile.
+
+=== 10-sobriete-meilleur
+
+La fonction ne passe aucun test et ne marche pas.
+
+=== 20-efficacite-meilleur2
+
+
+
+=== 24-1447-simplicite-pire
+
+Nom de classe pas Exercice -> J'ai du changé
+Compile et marche
+Ne passe pas les tests car il ignore les chiffres
+
+=== 29-simplicite-meilleur
+
+Compile et marche
+Passe les tests
+
+=== 32-SobrietePire
+
+Nom de classe pas Exercice -> J'ai du changé
+Nom du package pas package.exercice -> J'ai du changé
+Compile et marche
+Ne passe pas le test n°4
+
+=== 35-lisibilite-meilleur
+
+Compile et marche
+Ne passe pas les tests car il ignore les chiffres
+
+=== 56-simplicité-meilleur
+
+Nom de classe pas Exercice -> J'ai du changé (C'était exercice)
+Passe pas les tests car ne prends les mots en dehors de l'ordre
+
+=== 57-efficacite-meilleur
+
+Package après les import -> J'ai du decalé
+Compile et marche
+Mais ne passe pas les tests car il utilise LowerCase
+
+=== 61-EfficacitePire
+
+Nom de classe pas Exercice -> J'ai du changé
+Compile et marche
+Passe les tests
+
+=== 66-SimplicitePire
+
+Nom de classe pas Exercice -> J'ai du changé
+Compile et marche
+Passe les tests
+
+=== 66-SobrietePire
+
+Nom de classe pas Exercice -> J'ai du changé
+Compile et marche
+Passe les tests
+

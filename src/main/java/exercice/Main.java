@@ -9,22 +9,15 @@ public class Main {
         List<Character> ordre = List.of('c', 't', 'e', 'x', 'a', 'm', 'p', 'l', 's', 'r', 'd');
         //ordre = generateRandomLetterList(50);
     
-        List<Character> ordre2 = List.of('p', 'd', 'h', 'W', 'k', 'p', 'L', 'V', 'b', 'Q', 't', 'h', 'f', 'U', 'b', 'g', 'Y', 'O', 'U', 'f', 'i', 'v', 's', 'F', 'n', 'i', 'N', 'h', 'J', 'a', 'L', 'B', 'y', 'i', 'H', 'Q', 'g', 'p', 'c', 'S', 'k', 'q', 'V', 'y', 'O', 'R', 'c', 'T', 'c', 'f');
+        List<Character> ordre2 = List.of('p', 'd', 'h', 'W', 'k', 'p', 'L', 'V', 'b', 'Q', 't', 'f', 'U', 'b', 'g', 'Y', 'O', 'U', 'f', 'i', 'v', 's', 'F', 'n', 'i', 'N', 'J', 'a', 'L', 'B', 'y', 'i', 'H', 'Q', 'g', 'p', 'c', 'S', 'k', 'q', 'V', 'y', 'O', 'R', 'c', 'T', 'c', 'f');
         long start, end;
-        // Exercice.solutionBestEff(texte, ordre2);
-        // start = System.nanoTime();
-        // efficacitemeilleur.solution(texte, ordre);
-        // end = System.nanoTime();
-        // System.out.println("Temps d'exécution: " + (end - start) + " ns");
-        //Prends toutes les variables dans ordre2 et mets les dans un ordre aléatoire
-        // System.out.println(simplicitemeilleur.solution(texte, ordre));
         //On va faire tourner le programme 1000 fois pour avoir une moyenne de temps d'exécution
         int nbTest = 1000;
         long tempsMoyen = 0;
         for(int i = 0; i < nbTest; i++)
         {
             start = System.nanoTime();
-            efficacitemeilleur.solution(lorem,ordre2);
+            Exercice.solution(texte,ordre);
             end = System.nanoTime();
             tempsMoyen += (end - start);
         }

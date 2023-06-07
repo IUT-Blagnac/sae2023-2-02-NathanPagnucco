@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include "simplicitepire.h"
-
+#include "solution.h"
 int main() {
     char test[] =  {'f', 'I', 'z', 'u', 'k', 'a', 'b', 'o'};
     int tailleTest = 8;
