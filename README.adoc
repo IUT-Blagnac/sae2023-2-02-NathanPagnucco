@@ -194,20 +194,21 @@ WARNING: Les répertoires et fichiers existants devront être complétés et mis
 
 Voici les pré-requis pour exécuter nos codes d'évaluation.
 
-- Java v.x.y.z
-- ...
+- Java 17
+- Compileur C qui compile tous les programmes en .c
 
 === Reproductibilité
 
 - Pour reproduire nos analyses :
-. Installez X
-. Lancez Y
-. ...
+- En java : 
+- Déplacer les fichiers Chrono.java et Memoire.java de analyse/ vers src/main/java et decommentez le code dans le main, vous verrez alors les temps d'execution de la classe Exercice pour trois tailles différente et la mémoire utilisée
+. En C:
+. En partant du principe que vous avez un compiler qui marche
+. 
 
 === Références
 
-- link:http://xyz[Mon super outil XYZ]
-- ...
+- link:https://app.codacy.com/organizations/gh/IUT-Blagnac/repositories[Codacy]
 
 == Généralités, notation de la SAÉ et résultat du concours
 
