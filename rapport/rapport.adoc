@@ -5,6 +5,8 @@
 === 4-sobriete-meilleur
 
 La fonction passe tous les tests de base et compile.
+18 car que les tests de base
+
 
 === 10-sobriete-meilleur
 
@@ -24,6 +26,10 @@ Ne passe pas les tests car il ignore les chiffres
 
 Compile et marche
 Passe les tests
+et les tests supplémentaires
+
+20
+
 
 === 32-SobrietePire
 
