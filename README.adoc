@@ -203,8 +203,8 @@ Voici les pré-requis pour exécuter nos codes d'évaluation.
 - En java : 
 - Déplacer les fichiers Chrono.java et Memoire.java de analyse/ vers src/main/java et decommentez le code dans le main, vous verrez alors les temps d'execution de la classe Exercice pour trois tailles différente et la mémoire utilisée
 . En C:
-. En partant du principe que vous avez un compiler qui marche
-. 
+. En partant du principe que vous avez un compiler qui marche, déplacer test.c dans le même dossier que solution.c, et compiler tous les fichier .c ensemble
+. Lancer le debugger -> Cela affichera les différentes phrases de test et le temps d'execution
 
 === Références
 
