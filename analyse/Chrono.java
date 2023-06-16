@@ -16,13 +16,13 @@ public class Chrono
      * Fonction qui prend en parametre une fonction et qui calcule le temps d'execution de cette fonction
      * @return le temps d'execution moyen sur un petit ordre, un ordre moyen et un grand ordre en milisecondes
      */
-    public static int[] calculTempsExecution(int nbTest) { 
+    public static float[] calculTempsExecution(int nbTest) { 
         
         List<Character> petitOrdre = generateRandomLetterList(5);
         List<Character> moyenOrdre = generateRandomLetterList(20);
         List<Character> grandOrdre = generateRandomLetterList(26*2+10);
         long start, end,tempsMoyen = 0;
-        int[] tempsExecution = new int[3];
+        float[] tempsExecution = new float[3];
         for(int i = 0; i < nbTest; i++)
         {
             start = System.nanoTime();
@@ -30,7 +30,7 @@ public class Chrono
             end = System.nanoTime();
             tempsMoyen += (end - start);
         }
-        tempsExecution[0] = (int) (tempsMoyen / nbTest);
+        tempsExecution[0] = (tempsMoyen / nbTest)/1000000f;
         tempsMoyen = 0;
         for(int i = 0; i < nbTest; i++)
         {
@@ -39,7 +39,7 @@ public class Chrono
             end = System.nanoTime();
             tempsMoyen += (end - start);
         }
-        tempsExecution[1] = (int) (tempsMoyen / nbTest);
+        tempsExecution[1] = (tempsMoyen / nbTest)/1000000f;
         tempsMoyen = 0;
         for(int i = 0; i < nbTest; i++)
         {
@@ -48,7 +48,7 @@ public class Chrono
             end = System.nanoTime();
             tempsMoyen += (end - start);
         }
-        tempsExecution[2] = (int) (tempsMoyen / nbTest);
+        tempsExecution[2] =(tempsMoyen / nbTest)/1000000f;
 
         // tempsMoyen /= nbTest;
         return tempsExecution;
